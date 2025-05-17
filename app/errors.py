@@ -1,4 +1,8 @@
 # rer8
+class NotWearingMaskError(Exception):
+    pass
+
+
 class VaccineError(Exception):
     pass
 
@@ -8,8 +12,4 @@ class NotVaccinatedError(VaccineError):
 
 
 class OutdatedVaccineError(VaccineError):
-    pass
-
-
-class NotWearingMaskError(NotVaccinatedError):
     pass
